@@ -94,24 +94,45 @@
 
 					<section data-markdown>
 						<script type="text/template">
-						#Wo liegen die <br/>Programme unter Unix <br/>Betriebssystemen
+						#Wo liegen die Programme unter Unix Betriebssystemen
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-						###/bin/
+						###bin
+						```
+							$ cd /bin/ 
+						```
+						unter /bin/ liegen die Grundlegenden Systembefehle (für alle Benutzer)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-						###/usr/sbin/
+						###USR
+						```
+							$ cd /usr/ 
+						```
+						ist die wichtigste Ebene des Dateisystems. Alle Dateien und verzeichnise unterhalb sind nicht vom system anhängig (können gemeinsam mit genutzt werden)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-						###/usr/bin
+						###BIN
+						```
+							$ cd /usr/bin 
+						```
+						viele Systembefehle
 						</script>
 					</section>
+					<section data-markdown>
+						<script type="text/template">
+						###SBIN
+						```
+							$ cd /usr/sbin 
+						```
+						weitere nicht vom System zwindend erforderliche Systembefehle
+						</script>
+					</section>					
 				</section>
 
 
