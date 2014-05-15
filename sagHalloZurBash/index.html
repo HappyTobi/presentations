@@ -243,11 +243,28 @@
 						May 12 21:21 /var/log/system.log
 						</code>
 						
-						<p class="fragment roll-in">-rw-r-----</p>
+						<p class="fragment roll-in"><span style="color:rgb(83, 179, 76)">Berechtigungs Matrix</span> -rw-r-----</p>
 
-						<p class="fragment roll-in">root - User dem die Datei / Ordner gehört</p>
+						<p class="fragment roll-in"><span style="color:rgb(76, 179, 172)">root</span> - User dem die Datei / Ordner gehört</p>
 
-						<p class="fragment roll-in">admin - Gruppe dem die Datei / Ordener gehört</p>
+						<p class="fragment roll-in"><span style="color:rgb(179, 76, 109);">admin</span> - Gruppe dem die Datei / Ordener gehört</p>
+
+						<p class="fragment roll-in"><span style="color:rgb(139, 76, 179);">May 12 21:21</span> - Datum wann die Datei / Order geändert wurde</p>
+
+						<p class="fragment roll-in"><span style="color:rgb(179, 175, 76);">/var/log/system.log</span> - Datei / Ordner der angefragt wurde</p>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+						###Berechtigungen anzeigen
+						```
+							$ls -alitr /var/log/system.log
+						```
+						Ausgabe:<br/>
+						<code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+						2819441 -rw-r-----@ 1 root  admin  48408
+						May 12 21:21 /var/log/system.log
+						</code>
 						</script>
 					</section>
 				</section>
