@@ -86,11 +86,6 @@
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-						#Wo liegen die <br/>Programme unter Unix <br/>Betriebssystemen
-						</script>
-					</section>
-					<section data-markdown>
-						<script type="text/template">
 						###/ (ROOT)
 						```
 							$ cd /
@@ -195,6 +190,30 @@
 							**mehr Informationen siehe [Ubuntu Wiki](http://wiki.ubuntuusers.de/Verzeichnisstruktur)**
 						</script>
 					</section>
+					<section data-markdown>
+						<script type="text/template">
+						#Wo liegen die <br/>Programme unter Unix <br/>Betriebssystemen
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							###Ausführbare Dateien / Anwendungen
+							```
+							$ cd /usr/sbin
+							$ cd /usr/bin
+							$ cd /bin
+							$ cd /sbin
+							```
+							Achtung! je nach Distribution können die ausführbaren Programme auch an einem anderen Ort liegen
+							<br/><br/>
+							###Pfade prüfen
+							```
+								$echo $PATH
+							
+								usr/local/bin:/usr/local/bin/node:/usr/local/share/npm/bin/
+								```
+						</script>
+					</section>
 				</section>
 				<!-- BERECHTIGUNGEN -->
 				<section>
@@ -211,12 +230,29 @@
 						```
 						Ausgabe:<br/>
 						<code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-						2819441 -rw-r-----@ 1 root  admin  48408 
+						2819441 -rw-r-----@ 1 root  admin  48408
 						May 12 21:21 /var/log/system.log
 						</code>
 						</script>
 					</section>
+					<section data-markdown>
+						<script type="text/template">
+						###Berechtigungen im Detail
+						<code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+						2819441 -rw-r-----@ 1 root  admin  48408
+						May 12 21:21 /var/log/system.log
+						</code>
+						
+						<p class="fragment roll-in">-rw-r-----</p>
+
+						<p class="fragment roll-in">root - User dem die Datei / Ordner gehört</p>
+
+						<p class="fragment roll-in">admin - Gruppe dem die Datei / Ordener gehört</p>
+						</script>
+					</section>
 				</section>
+
+
 
 				<!-- PROGRAMME -->
 				<section>
@@ -240,6 +276,7 @@
 						touch
 						pwd
 						nano
+						whereis
 					</section>
 				</section>
 				<section>
@@ -442,4 +479,4 @@
 			});
 		</script>
 	</body>
-</html>		
+</html>
